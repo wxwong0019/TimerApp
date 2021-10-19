@@ -32,7 +32,7 @@ export const Timer = (props) => {
     ) {
       handleSetTimeConversion(props.startTime);
     }
-    //Repeat every 1 s if play is true
+    //Repeat every 1 second if play is true
     if (play || totalSeconds === -1) {
       const intervalId = setInterval(() => {
         setTotalSeconds((prevTotalSeconds) => {
